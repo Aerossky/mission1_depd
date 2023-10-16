@@ -130,6 +130,23 @@ class _Mission1PageState extends State<Mission1Page> {
                                   ),
                                 ),
                               ),
+
+                               // photo 5
+                              // style gambar
+                              Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 8),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(12),
+                                  child: AspectRatio(
+                                    aspectRatio: 1.0,
+                                    child: Image.asset(
+                                      'images/5.jpeg',
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                              ),
                             ],
                           ),
                         ],
@@ -155,7 +172,10 @@ class _Mission1PageState extends State<Mission1Page> {
                           child: SingleChildScrollView(
                             padding: EdgeInsets.all(8),
                             child: Text(
-                              '''Bali, pulau eksotis di Indonesia, memukau wisatawan dengan keindahan alamnya yang menakjubkan dan warisan budayanya yang kaya. Dengan pantainya yang berpasir putih halus dan air laut biru jernih, Bali adalah surga bagi pecinta pantai. Pantai-pantai seperti Kuta, Seminyak, dan Jimbaran menawarkan matahari terbenam yang memukau dan ombak yang sempurna untuk berselancar. Selain itu, hutan hujan tropisnya yang hijau subur dan gunung-gunungnya yang menjulang memberikan pengalaman trekking yang luar biasa. Bali juga dikenal dengan teras-teras sawahnya yang menawan, terutama di daerah Tegallalang, menciptakan pemandangan yang memikat mata. Namun, pesona Bali tidak hanya terbatas pada alamnya. Budaya pulau ini tercermin dalam kuil-kuil megah seperti Pura Tanah Lot dan Pura Besakih, serta seni tari dan musik tradisional yang memukau. Dengan keramahan penduduknya dan hidangan kuliner yang lezat, Bali bukan sekadar destinasi liburan, tapi pengalaman yang mengubah hidup. Keindahan Bali tidak hanya terlihat, tetapi juga dirasakan, menjadikannya destinasi impian bagi banyak wisatawan di seluruh dunia.''',
+                              '''Bali, pulau eksotis di Indonesia, memukau wisatawan dengan keindahan alamnya yang menakjubkan dan warisan budayanya yang kaya. Dengan pantainya yang berpasir putih halus dan air laut biru jernih, Bali adalah surga bagi pecinta pantai. Pantai-pantai seperti Kuta, Seminyak, dan Jimbaran menawarkan matahari terbenam yang memukau dan ombak yang sempurna untuk berselancar. 
+                              Selain itu, hutan hujan tropisnya yang hijau subur dan gunung-gunungnya yang menjulang memberikan pengalaman trekking yang luar biasa. Bali juga dikenal dengan teras-teras sawahnya yang menawan, terutama di daerah Tegallalang, menciptakan pemandangan yang memikat mata. 
+                              Namun, pesona Bali tidak hanya terbatas pada alamnya. Budaya pulau ini tercermin dalam kuil-kuil megah seperti Pura Tanah Lot dan Pura Besakih, serta seni tari dan musik tradisional yang memukau. 
+                              Dengan keramahan penduduknya dan hidangan kuliner yang lezat, Bali bukan sekadar destinasi liburan, tapi pengalaman yang mengubah hidup. Keindahan Bali tidak hanya terlihat, tetapi juga dirasakan, menjadikannya destinasi impian bagi banyak wisatawan di seluruh dunia.''',
                               textAlign: TextAlign.justify,
                               style: TextStyle(
                                 fontSize: 18,
