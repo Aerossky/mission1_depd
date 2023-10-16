@@ -19,8 +19,8 @@ class _Mission1PageState extends State<Mission1Page> {
             style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
-                color: Colors.black)),
-        backgroundColor: Colors.yellow[400],
+                color: Colors.white)),
+        backgroundColor: Colors.green,
       ),
       body: Stack(
         children: [
@@ -29,7 +29,7 @@ class _Mission1PageState extends State<Mission1Page> {
             child: Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  colors: [Colors.white, Colors.yellow.shade100],
+                  colors: [Colors.white, Colors.green.shade100],
                   // start dan end
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight,
@@ -45,7 +45,7 @@ class _Mission1PageState extends State<Mission1Page> {
                       height: double.infinity,
                       child: ClipRRect(
                         child: Image.asset(
-                          'images/iu_banner.jpg',
+                          'images/banner.jpg',
                           fit: BoxFit.fill,
                         ),
                       ),
@@ -73,7 +73,7 @@ class _Mission1PageState extends State<Mission1Page> {
                                   child: AspectRatio(
                                     aspectRatio: 1.0,
                                     child: Image.asset(
-                                      'images/iu_banner.jpg',
+                                      'images/1.jpeg',
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -90,7 +90,7 @@ class _Mission1PageState extends State<Mission1Page> {
                                   child: AspectRatio(
                                     aspectRatio: 1.0,
                                     child: Image.asset(
-                                      'images/iu_banner.jpg',
+                                      'images/2.jpeg',
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -107,7 +107,7 @@ class _Mission1PageState extends State<Mission1Page> {
                                   child: AspectRatio(
                                     aspectRatio: 1.0,
                                     child: Image.asset(
-                                      'images/iu_banner.jpg',
+                                      'images/3.jpeg',
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -124,7 +124,7 @@ class _Mission1PageState extends State<Mission1Page> {
                                   child: AspectRatio(
                                     aspectRatio: 1.0,
                                     child: Image.asset(
-                                      'images/iu_banner.jpg',
+                                      'images/4.jpeg',
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -142,22 +142,28 @@ class _Mission1PageState extends State<Mission1Page> {
                     flex: 4,
                     child: Column(
                       children: [
-                        Text("Data",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),),
+                        Text(
+                          "Bali: Pesona Keindahan Pulau Surgawi",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 22,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
                         // scrollview
                         Expanded(
                           child: SingleChildScrollView(
                             padding: EdgeInsets.all(8),
                             child: Text(
-                                '''Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique eget sem vel dignissim. Praesent sit amet mollis lectus. Praesent rhoncus scelerisque orci, sed accumsan justo commodo eu. Vestibulum malesuada leo non magna vehicula, quis facilisis dolor interdum. Nulla facilisi. Sed venenatis mollis elit, eget sagittis sem efficitur at. Quisque sed porta eros. Mauris ac elit hendrerit, dapibus magna in, ultrices massa. Suspendisse placerat tellus eget hendrerit vehicula. In nec neque at mauris blandit euismod. Fusce mi ligula, varius aliquam dictum a, accumsan ac quam. Integer hendrerit, felis vel dictum mollis, nibh nisi aliquam ipsum, sed iaculis ex eros id enim. Pellentesque nulla massa, ultricies et metus a, vehicula egestas purus. Suspendisse luctus imperdiet tellus a placerat.
+                              '''Bali, pulau eksotis di Indonesia, memukau wisatawan dengan keindahan alamnya yang menakjubkan dan warisan budayanya yang kaya. Dengan pantainya yang berpasir putih halus dan air laut biru jernih, Bali adalah surga bagi pecinta pantai. Pantai-pantai seperti Kuta, Seminyak, dan Jimbaran menawarkan matahari terbenam yang memukau dan ombak yang sempurna untuk berselancar. Selain itu, hutan hujan tropisnya yang hijau subur dan gunung-gunungnya yang menjulang memberikan pengalaman trekking yang luar biasa. Bali juga dikenal dengan teras-teras sawahnya yang menawan, terutama di daerah Tegallalang, menciptakan pemandangan yang memikat mata. Namun, pesona Bali tidak hanya terbatas pada alamnya. Budaya pulau ini tercermin dalam kuil-kuil megah seperti Pura Tanah Lot dan Pura Besakih, serta seni tari dan musik tradisional yang memukau. Dengan keramahan penduduknya dan hidangan kuliner yang lezat, Bali bukan sekadar destinasi liburan, tapi pengalaman yang mengubah hidup. Keindahan Bali tidak hanya terlihat, tetapi juga dirasakan, menjadikannya destinasi impian bagi banyak wisatawan di seluruh dunia.''',
+                              textAlign: TextAlign.justify,
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w400,
+                                
 
-Suspendisse ultricies, felis eu tempus dignissim, lorem erat venenatis orci, ut consectetur tortor arcu vitae risus. Sed luctus convallis tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae convallis orci. Integer dignissim condimentum libero vitae porttitor. Vivamus nec fermentum metus, nec eleifend lacus. Ut egestas fermentum sem, tincidunt dignissim urna hendrerit eu. Integer et sapien sed tortor porttitor rhoncus eu nec lectus. Fusce faucibus sem molestie convallis facilisis. Vestibulum tincidunt justo diam, vel laoreet nibh molestie ultrices. Quisque maximus, nisi id porttitor finibus, elit lectus commodo sem, sit amet consequat lorem velit id risus. Nulla facilisi. Sed nec tellus rhoncus, pellentesque felis in, elementum urna. Integer malesuada sollicitudin erat, id tincidunt augue efficitur interdum.
-
-Praesent quis ornare dui. Suspendisse interdum, sem sit amet pulvinar volutpat, augue leo imperdiet felis, at congue lorem eros vitae nulla. Sed eleifend rutrum dignissim. Fusce venenatis sed magna ac accumsan. Etiam luctus nulla porta vehicula dictum. Vivamus risus neque, aliquam luctus ligula et, iaculis blandit ipsum. Curabitur vitae felis at mauris placerat bibendum. Donec nulla orci, efficitur et cursus sit amet, viverra vel erat. Sed neque tellus, varius vel nulla in, ornare scelerisque lorem. Aenean nec accumsan odio.
-
-Phasellus ultricies quam nec ligula fringilla sagittis. Integer venenatis orci eget faucibus elementum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam nisi mauris, ullamcorper a scelerisque non, tincidunt a ex. Fusce rhoncus scelerisque magna, quis accumsan diam elementum id. Nullam aliquam eleifend suscipit. Ut ac nunc ultrices, tristique mauris et, tincidunt urna. Nam at rhoncus nunc. Ut pellentesque sapien dui, vel lacinia felis cursus eget. Proin commodo est nunc, non tempor ex tempus vehicula.
-
-Vivamus tincidunt neque ex, nec pulvinar diam finibus ac. Nunc vitae ipsum lectus. Donec condimentum nec nisl nec suscipit. Duis sit amet erat sollicitudin arcu consequat lobortis at varius mauris. Fusce bibendum fringilla vulputate. Mauris blandit, leo in consectetur fringilla, dui ipsum commodo orci, ut pulvinar purus ex at ante. Aenean sodales interdum est, nec imperdiet metus porta ac. Donec a convallis nisl, at consectetur velit. Donec ullamcorper, ante a gravida gravida, sem nisi euismod risus, ac auctor sem felis at erat. Nulla tristique, lorem in vehicula pretium, neque nisl porta lectus, sed gravida odio ligula eget ante.''',
-                                textAlign: TextAlign.justify),
+                              ),
+                            ),
                           ),
                         )
                       ],
@@ -172,15 +178,19 @@ Vivamus tincidunt neque ex, nec pulvinar diam finibus ac. Nunc vitae ipsum lectu
           Positioned(
             bottom: 10,
             right: 10,
-            child: FloatingActionButton(onPressed: () {
-                  setState(() {
-                    buttonColor = !buttonColor;
-                  });
-                },
-                backgroundColor: Colors.white,
-                shape: CircleBorder(),
-                child: Icon(Icons.favorite, color: buttonColor ? Colors.red : Colors.grey,),
-                ),
+            child: FloatingActionButton(
+              onPressed: () {
+                setState(() {
+                  buttonColor = !buttonColor;
+                });
+              },
+              backgroundColor: Colors.white,
+              shape: CircleBorder(),
+              child: Icon(
+                Icons.favorite,
+                color: buttonColor ? Colors.red : Colors.grey,
+              ),
+            ),
           )
         ],
       ),
