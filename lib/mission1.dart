@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:mission1_depd/bookingPage.dart';
 
 class Mission1Page extends StatefulWidget {
   const Mission1Page({super.key});
@@ -194,9 +196,9 @@ class _Mission1PageState extends State<Mission1Page> {
             ),
           ),
 
-          // button
+          // button love
           Positioned(
-            bottom: 10,
+            top: 10,
             right: 10,
             child: FloatingActionButton(
               onPressed: () {
@@ -211,9 +213,38 @@ class _Mission1PageState extends State<Mission1Page> {
                 color: buttonColor ? Colors.red : Colors.grey,
               ),
             ),
+          ),
+          // button book now
+          Positioned(
+            bottom: 10,
+            right: 10,
+            child: ElevatedButton.icon(
+                    onPressed: () {
+                      // // TOAST
+                      Fluttertoast.showToast(
+                          msg: "Welcome to booking page",
+                          backgroundColor: Colors.green);
+                      // REDIRECT (push & pushReplacement)
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return const BookingPage();
+                      }
+                      ));
+                    },
+                    icon: const Icon(Icons.check_box),
+                    label: const Text("Book Now"),
+                    // style button
+                    style: ElevatedButton.styleFrom(
+                        elevation: 0,
+                        padding: const EdgeInsets.fromLTRB(24, 12, 24, 12),
+                        backgroundColor: Colors.green[700],
+                        foregroundColor: Colors.white,
+                        textStyle: const TextStyle(fontSize: 20)),
+                  ),
           )
         ],
       ),
     );
   }
 }
+
